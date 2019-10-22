@@ -9,5 +9,5 @@ sudo rm -f /var/www/html/index.html
 sudo rm -rf /var/www/html/php-sample/
 sudo bash -c 'echo "%CliqrTier_Database_IP%" >> /var/www/html/index.html'
 sudo bash -c 'echo "%JOB_NAME%" >> /var/www/html/index.html'
-sudo echo %JOB_NAME%
+echo %JOB_NAME% > /home/cliqruser/job.txt
 #sudo echo "export test%JOB_NAME%" >> .bash_profile
