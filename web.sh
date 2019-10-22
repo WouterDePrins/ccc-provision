@@ -7,6 +7,8 @@ sudo git clone https://github.com/robinverstraelen/php-sample.git /var/www/html/
 sudo mv /var/www/html/php-sample/index.php /var/www/html/index.php
 sudo rm -f /var/www/html/index.html
 sudo rm -rf /var/www/html/php-sample/
+sudo touch /var/www/html/php-sample/ip.html
+sudo touch /var/www/html/php-sample/job.html
 sudo echo "%CliqrTier_Database_IP%" > /var/www/html/php-sample/ip.html
 sudo echo "%JOB_NAME%" > /var/www/html/php-sample/job.html
-sudo echo "export test%JOB_NAME%" >> .bash_profile
+#sudo echo "export test%JOB_NAME%" >> .bash_profile
