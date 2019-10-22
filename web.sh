@@ -7,7 +7,7 @@ sudo git clone https://github.com/robinverstraelen/php-sample.git /var/www/html/
 sudo mv /var/www/html/php-sample/index.php /var/www/html/index.php
 sudo rm -f /var/www/html/index.html
 sudo rm -rf /var/www/html/php-sample/
-sudo bash -c 'echo "%CliqrTier_Database_IP%" >> /var/www/html/index.html'
-sudo bash -c 'echo "%JOB_NAME%" >> /var/www/html/index.html'
-#echo %JOB_NAME% > /home/cliqruser/job.txt
+sudo bash -c 'echo %CliqrTier_Database_IP% >> /var/www/html/index.html'
+sudo bash -c 'echo %JOB_NAME% >> /var/www/html/index.html'
+echo %JOB_NAME% > /home/cliqruser/job.txt
 #sudo echo "export test%JOB_NAME%" >> .bash_profile
