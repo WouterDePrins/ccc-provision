@@ -8,4 +8,5 @@ sudo mv /var/www/html/php-sample/index.php /var/www/html/index.php
 sudo rm -f /var/www/html/index.html
 sudo rm -rf /var/www/html/php-sample/
 export DBIP=%CliqrTier_Database_IP%
+export JOB=%JOB_NAME%
 export TEST="Test"
