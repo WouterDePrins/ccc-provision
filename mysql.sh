@@ -7,7 +7,8 @@ sudo yum -y install mysql-server
 sudo systemctl start mysqld
 temp_password=$(sudo grep password /var/log/mysqld.log | awk '{print $NF}')
 sudo mkdir -p /var/mysql/
-sudo echo "ALTER USER 'root'@'localhost' IDENTIFIED BY 'C1sco123&'; flush privileges;" > /var/mysql/reset_pass.sql
-#sudo mysql -u root --password="$temp_password" --connect-expired-password < "ALTER USER 'root'@'localhost' IDENTIFIED BY 'C1sco123&'; flush privileges;"
+sudo su
+echo "ALTER USER 'root'@'localhost' IDENTIFIED BY 'C1sco123&'; flush privileges;" > /var/mysql/reset_pass.sql
+sudo mysql -u root --password="$temp_password" --connect-expired-password < /var/mysql/reset_pass.sql
 
 #;https://raw.githubusercontent.com/robinverstraelen/ccc-provision/master/mysql.sh
