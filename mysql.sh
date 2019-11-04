@@ -7,6 +7,7 @@ sudo yum -y install mysql-server
 sudo systemctl start mysqld
 temp_password=$(sudo grep password /var/log/mysqld.log | awk '{print $NF}')
 sudo mkdir -p /var/mysql/
+sudo echo $(sudo grep password /var/log/mysqld.log | awk '{print $NF}') | sudo tee /home/cliqruser/pass > /dev/null
 sudo echo "ALTER USER 'root'@'localhost' IDENTIFIED BY 'C1sco123&'; flush privileges;" | sudo tee /home/cliqruser/reset_pass.sql > /dev/null
 #sudo echo "flush privileges;" | sudo tee /home/cliqruser/reset_pass.sql > /dev/null
 #mysql -u root --password="$temp_password" --connect-expired-password < /home/cliqruser/reset_pass.sql
