@@ -21,6 +21,7 @@ mysql -u root --password="$temp_password" --connect-expired-password < /home/cli
 # populate database
 mkdir -p /home/cliqruser/db
 git clone https://github.com/datacharmer/test_db.git /home/cliqruser/db
+cd /home/cliqruser/db/
 mysql -u root --password="$temp_password" --connect-expired-password < /home/cliqruser/db/employees.sql
 #;https://raw.githubusercontent.com/robinverstraelen/ccc-provision/master/mysql.sh
 #sudo bash <(curl -s https://raw.githubusercontent.com/robinverstraelen/ccc-provision/master/mysql.sh)
