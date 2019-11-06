@@ -1,5 +1,3 @@
-source /usr/local/cliqr/etc/userenv
-
 # install software
 sudo yum -y update
 sudo yum -y install wget
@@ -23,5 +21,3 @@ mkdir -p /home/cliqruser/db
 git clone https://github.com/datacharmer/test_db.git /home/cliqruser/db
 cd /home/cliqruser/db/
 mysql -u root --password="$temp_password" --connect-expired-password < /home/cliqruser/db/employees.sql
-#;https://raw.githubusercontent.com/robinverstraelen/ccc-provision/master/mysql.sh
-#sudo bash <(curl -s https://raw.githubusercontent.com/robinverstraelen/ccc-provision/master/mysql.sh)
