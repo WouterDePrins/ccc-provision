@@ -30,6 +30,8 @@ I like to start with the lowest tier and build up applications as we go. Since o
 
 ![image of Properties](img/prop.png =250x)
 
+<img src="img/prop.png" alt="properties" width="200"/>
+
 The External Initialization section allows us to execute scripts at different stages of our deployment. I like to specify my startup config under Node Initialization & Clean Up so we'll skip this section for now. Our security policies are set in the Firewall Rules section. You can go as specific as you want here. For the purpose of this demo, I'll allow access to port 3306 from every network (0.0.0.0/0).
 
 In the Node Initialization & Clean Up tab, we can setup our Initialization script. For installing MySQL on CentOS 7, I created a [script](mysql.sh) that we'll call in the Initialization script field by selecting URL or Command and pasting "bash <(curl -s https://raw.githubusercontent.com/robinverstraelen/ccc-provision/master/mysql.sh)" in the text field. This will get the mysql.sh file from github (curl) and execute it (bash).
