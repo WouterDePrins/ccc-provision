@@ -1,0 +1,1 @@
+sudo mysqldump -u appuser --password="C1sco123&" employees > dump.sql
