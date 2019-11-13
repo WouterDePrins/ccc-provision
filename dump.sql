@@ -1,3 +1,4 @@
+use employees;
 -- MySQL dump 10.13  Distrib 5.6.24, for Linux (x86_64)
 --
 -- Host: localhost    Database: employees
@@ -253,4 +254,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-13  9:20:14
+-- Dump completed on 2019-11-13 10:47:05
